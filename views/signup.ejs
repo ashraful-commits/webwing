@@ -1,0 +1,60 @@
+<div id="contact" class="contact ">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-12">
+             <div class="titlepage">
+                <h2><strong class="yellow">Sign Up</strong><br>Request for Sign Up</h2>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-md-8 offset-md-2">
+             <form id="post_form" class="contact_form" method="post" action="/signup">
+                <div class="row">
+                   <div class="col-md-12 ">
+                    
+                     <% if (message) { %>
+                        <p class="contact_control text-danger"><%= message %> </p>
+                     <% } %>
+                   </div>
+                   <div class="col-md-12 ">
+                      <input class="contact_control" placeholder=" Name" type="text" name="name">
+                   </div>
+                   <div class="col-md-12 ">
+                      <input class="contact_control" placeholder=" Username" type="text" name="username">
+                   </div>
+                   <div class="col-md-12 ">
+                      <input class="contact_control" placeholder=" Password" type="password" name="password">
+                   </div>
+                   <div class="col-md-12">
+                      <input class="contact_control" placeholder="Email" type="email" name="email">
+                   </div>
+                   <div class="col-md-12">
+                      <input class="contact_control" placeholder="Phone Number " type="number" name="cell">
+                   </div>
+                   <div class="col-md-12">
+                      <select class="contact_control" name="gender" id="">
+                        <option value="">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                      </select>
+                   </div>
+                   <div class="col-md-12">
+                      <select class="contact_control" name="location" id="">
+                        <option value="">Location</option>
+                        <option value="Mirpur">Mirpur</option>
+                        <option value="Uttara">Uttara</option>
+                        <option value="Badda">Badda</option>
+                      </select>
+                   </div>
+                 
+                   <div class="col-md-12">
+                      <button type="submit" class="send_btn">SignUp</button>
+                   </div>
+             </form>
+          </div>
+       </div>
+    </div>
+ </div>
+ </div>
